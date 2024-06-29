@@ -1,0 +1,77 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.outer-container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom ,#9ccdd2,#0da2bdef);
+}
+.inner-container{
+position: relative;
+top:20%;
+margin: 0 auto;
+width: 15rem;
+border:1px solid lightblue;
+background: linear-gradient(to top left, rgb(235, 225, 225), #ffffff33);
+box-shadow: 2px 2px 10px #043035;
+border-radius: 1rem;
+backdrop-filter: blur(8px);
+z-index: 2;
+}
+main{
+    padding-left:1em;
+}
+form p {
+    margin: 1em;
+    
+}
+label{
+    font-size: 120%;
+}
+#submit{
+    color: #ffffff;
+    background-color: #1488e6;
+    position: relative;
+    left: 20%;
+}
+#submit:hover{
+ background-color: rgb(35, 100, 152);
+}
+input{
+    margin: 4px;
+    cursor: pointer;     
+}
+footer{
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: -2px;
+}
+.circle{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to top left,#ffffff,#ffffff33);
+position: absolute;
+}
+.c1{
+    top: 10%;
+    left: 10%;
+}
+.c2{
+    bottom: 10%;
+    right: 10%;
+}
+footer p a{
+    color: #2773a5;
+   text-decoration: none;
+} 
+footer p a:hover{
+color: #057de0;
+text-decoration: underline;
+}                  
