@@ -74,4 +74,8 @@ footer p a{
 footer p a:hover{
 color: #057de0;
 text-decoration: underline;
-}                  
+}  
+input:focus{
+    background-color: #b4b4b4;
+    height: 2rem;
+}                
