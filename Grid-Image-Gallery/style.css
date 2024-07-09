@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Baskervville SC", serif;
+  background: linear-gradient(to right,#07210d, #0b3317);
+color: white;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.25rem;
+    font-family: "Wittgenstein", serif;
+}
+.container{
+    display: flex;
+   height: 100vh;
+    align-items: center;
+}
+.left-text{
+    flex-basis: 40% ;
+    padding: 4%;
+}
+.right-gallery{
+    font-family: "Wittgenstein", serif;
+    display: grid;
+    gap: 8px 8px;
+   flex-basis: 60%;
+    height: 100%;
+    padding: 20px 50px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+.box{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    background-color: #222;
+    background-blend-mode: overlay;
+}
+
+.box:hover{
+    background-position:center;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    box-shadow: 0 0 4px #fff;
+    transition: 1.5s ease-in-out;
+    background-color: #999;
+}
+.row2{
+    grid-row: span 2;
+}
+.col2{
+    grid-column: span 2;
+}
