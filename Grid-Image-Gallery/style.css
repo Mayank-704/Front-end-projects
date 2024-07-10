@@ -44,6 +44,7 @@ p{
     background-position: top;
     background-color: #222;
     background-blend-mode: overlay;
+    transition: 1s linear;
 }
 
 .box:hover{
@@ -51,12 +52,36 @@ p{
     background-size: cover;
     background-blend-mode: hard-light;
     box-shadow: 0 0 4px #fff;
-    transition: 1.5s ease-in-out;
     background-color: #999;
+transform: scale(1.2,1.2);
 }
 .row2{
     grid-row: span 2;
+    
 }
+
 .col2{
-    grid-column: span 2;
+    grid-column: span 2;    
+}
+
+/* Media Querries */
+
+@media screen and (max-width:440px ){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-text{
+        width:300px;
+    }
+    .box{
+        grid-column: span 2 ;
+    }
+    .right-gallery{
+        width: 100%;
+        padding:2% ;
+        flex-basis: auto;
+        grid-template-columns: 350px;
+    }
 }
