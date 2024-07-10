@@ -44,7 +44,8 @@ p{
     background-position: top;
     background-color: #222;
     background-blend-mode: overlay;
-    transition: 1s linear;
+    transition: 0.8s linear;
+     transition-property: transform, background-color, box-shadow, background-blend-mode,background-position, background-size; 
 }
 
 .box:hover{
