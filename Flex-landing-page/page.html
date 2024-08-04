@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="MediaQuerries.css">
 </head>
 <body>
     <!-- Top Banner -->
@@ -28,6 +29,7 @@
             <li><a href="#"class="hover-link Secondary-button">Sign in</a></li>
             <li><a href="#"class="hover-link Primary-button">Sign up</a></li></ul>
         </div>
+    <a href="#" class="nav-toggle hover-link" id="nav-toggle" > <i class="fa-solid fa-bars"></i></a>
     </div>
  </nav>
 
@@ -140,7 +142,7 @@
 
 <!-- 2 -->
 
-    <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+    <div class="container flex big-feature-container" id="second-big-feature" >
         <div class="Big-feature-image">
             <img src="assets/asset 21.png" alt="">
         </div>
@@ -206,6 +208,7 @@
  <footer>
     <div class="container flex footer-container">
         <a href="#" class="footer-image"><img src="assets/asset 1.png" alt=""></a>
+        <!-- 1 -->
         <div class="link-items flex">
             <h4>Product</h4>
             <a href="#" class="hover-link">lorem</a>
@@ -214,7 +217,7 @@
             <a href="#" class="hover-link">lorem</a>
             <a href="#" class="hover-link">lorem</a>
         </div>
-
+<!-- 2 -->
         <div class="link-items flex">
             <h4>Product</h4>
             <a href="#" class="hover-link">lorem</a>
@@ -223,7 +226,7 @@
             <a href="#" class="hover-link">lorem</a>
             <a href="#" class="hover-link">lorem</a>
         </div>
-
+<!-- 3 -->
         <div class="link-items flex">
             <h4>Product</h4>
             <a href="#" class="hover-link">lorem</a>
@@ -246,6 +249,16 @@
 </section>
 
     <script src="https://kit.fontawesome.com/28f3e4f3ff.js" crossorigin="anonymous"></script>
+
+    <script>
+        const menubtn= document.getElementById("nav-toggle");
+        const navlinks=document.getElementById("nav-links");
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('active');
+        })
+    </script>
+
 </body>
 </html>
 
